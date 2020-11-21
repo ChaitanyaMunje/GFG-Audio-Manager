@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML Code for your activity_main.xml-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!-- Textview to display the heading of the app-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_ringtone_manager_app"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/green"
+        android:layout_marginTop="50dp"
+        android:id="@+id/idTVHeading"
+        />
+    <!-- Textview to display the current mode of the Ringer mode-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/current_mode"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_below="@id/idTVHeading"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/idTVCurrentMode"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVCurrentMode"
+        android:layout_marginTop="80dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+        <!-- width of image button is 0dp because we have mentioned weight=1-->
+        <!--tint represents the color of icons of image button-->
+        <!-- all icons of image button are placed in drawable folder-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:src="@drawable/ic_vibrate"
+            android:tint="@color/white"
+            android:id="@+id/idIBVibrateMode"
+            android:contentDescription="@string/vibrate_mode"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_silent_mode"
+            android:tint="@color/white"
+            android:id="@+id/idIBSilentMode"
+            android:contentDescription="@string/silent_mode"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            android:src="@drawable/ic_ringtone_mode"
+            android:id="@+id/idIBRingtoneMode"
+            android:contentDescription="@string/ring_mode"
+            />
+    </LinearLayout>
+</RelativeLayout>

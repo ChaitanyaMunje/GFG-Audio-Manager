@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GFG Ringtone Manager</string>
+    <string name="vibrate_mode">vibrate_mode</string>
+    <string name="silent_mode">silent_mode</string>
+    <string name="ring_mode">ringtone_mode</string>
+    <string name="welcome_to_ringtone_manager_app">Welcome to Ringtone Manager App</string>
+    <string name="current_mode">Current Mode</string>
+</resources>
